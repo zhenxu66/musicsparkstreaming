@@ -17,7 +17,7 @@ object MusicStreamingAnalyticsApp {
 
     def main(args: Array[String]) {
 
-    val ssc = new StreamingContext("local[2]", "First Streaming App", Seconds(10))
+    val ssc = new StreamingContext("local[2]", "Michael Music Streaming App", Seconds(10))
     val stream = ssc.socketTextStream("localhost", 9999)
 
     // create stream of events from raw text elements
